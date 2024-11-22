@@ -5,12 +5,17 @@ import './App.css';
 function App() {
     return (
         <div className="App">
-            This is APP component
-
+            <AppTitle/>
             <Rating/>
             <Accordion/>
         </div>
     );
+}
+
+function AppTitle() {
+    return (
+        <>This is APP component</>
+    )
 }
 
 function Rating() {
@@ -26,7 +31,7 @@ function Rating() {
     )
 }
 
-function Star () {
+function Star() {
     return <div>star</div>
 }
 
@@ -34,14 +39,25 @@ function Accordion() {
     debugger
     return (
         <div>
-            <h3>Menu</h3>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
+            <AccordionTitle/>
+            <AccordionBody/>
         </div>
     )
+}
+
+function AccordionTitle() {
+    return <h3>Menu</h3>
+}
+
+function AccordionBody() {
+    return (
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    )
+
 }
 
 export default App;
