@@ -6,8 +6,6 @@ type PropsType = {
 };
 export const OnOff = (props: PropsType) => {
 
-
-
     const onStyle = {
         width: '30px',
         height: '20px',
